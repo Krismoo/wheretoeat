@@ -1,0 +1,14 @@
+main {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.nav-tabs {
+	position: absolute;
+	bottom: 5px;
+	width: inherit;
+}
+
+.nav-tabs li {
+	width: 33%;
+}

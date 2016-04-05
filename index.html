@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Where To Eat</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <script src="js/jquery-2.2.2.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=true&v=3"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body>
+
+        <main>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane" id="where">Map</div>
+				<div role="tabpanel" class="tab-pane" id="who">List</div>
+				<div role="tabpanel" class="tab-pane active" id="what">Options</div>
+			</div>
+			
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation"><a href="#where" aria-controls="map" role="tab" data-toggle="tab">Where</a></li>
+				<li role="presentation"><a href="#who" aria-controls="list" role="tab" data-toggle="tab">Who</a></li>
+				<li role="presentation" class="active"><a href="#what" aria-controls="options" role="tab" data-toggle="tab">What</a></li>
+			</ul>
+        </main>
+
+		
+		<script type="text/javascript">
+			$('#myTabs a').click(function (e) {
+				e.preventDefault();
+				$(this).tab('show');
+			});
+		</script>
+    </body>
+</html>
