@@ -1,12 +1,11 @@
 main {
-	width: 800px;
 	margin: 0 auto;
 }
 
 .nav-tabs {
 	position: absolute;
 	bottom: 5px;
-	width: inherit;
+	width: 100%;
 }
 
 .nav-tabs li {
