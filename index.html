@@ -20,9 +20,39 @@
 			<div class="tab-content">
 				<div role="tabpanel" class="tab-pane" id="where">Map</div>
 				<div role="tabpanel" class="tab-pane" id="who">List</div>
-				<div role="tabpanel" class="tab-pane active" id="what">Options</div>
-			</div>
-			
+				<div role="tabpanel" class="tab-pane active" id="what">
+          <!-- Options with Radiobuttons -->
+          <form action="radio.html">
+            <h3>What do I want to eat?</h3>
+              <fieldset>
+                <input type="radio" id="pizza" name="Menu" value="Pizza"><label for="pi">Pizza</label><br>
+                <input type="radio" id="burger" name="Menu" value="Burger"><label for="bu">Burger</label><br>
+                <input type="radio" id="kebab" name="Menu" value="Kebab"><label for="ke">Kebab</label><br>
+                <input type="radio" id="Sushi" name="Menu" value="Sushi"><label for="su">Sushi</label><br>
+                <input type="radio" id="vegi" name="Menu" value="Vegi"><label for="ve">Vegi</label><br>
+                <input type="radio" id="gourmet" name="Menu" value="Gourmet"><label for="go">Gourmet</label><br>
+              </fieldset>
+          </form>
+
+          <!-- Options with Checkboxes -->
+          <form action="#">
+            <h3>What do I want to eat?</h3>
+              <fieldset>
+                <ul>
+                  <input type="checkbox" name="Menu" value="Pizza"><label>Pizza</label><br>
+                  <input type="checkbox" name="Menu" value="Burger"><label>Burger</label><br>
+                  <input type="checkbox" name="Menu" value="Kebab"><label>Kebab</label><br>
+                  <input type="checkbox" name="Menu" value="Sushi"><label>Sushi</label><br>
+                  <input type="checkbox" name="Menu" value="Vegi"><label>Vegi</label><br>
+                  <input type="checkbox" name="Menu" value="Gourmet"><label>Gourmet</label>
+                </ul>
+              </fieldset>
+          </form>
+         </div>
+
+
+
+
 			<!-- Nav tabs -->
 			<ul class="nav nav-tabs" role="tablist">
 				<li role="presentation"><a href="#where" aria-controls="map" role="tab" data-toggle="tab">Where</a></li>
@@ -31,7 +61,7 @@
 			</ul>
         </main>
 
-		
+
 		<script type="text/javascript">
 			$('#myTabs a').click(function (e) {
 				e.preventDefault();
