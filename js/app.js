@@ -28,7 +28,7 @@ $(document).ready(function(){
 					location: here,
 					radius: 300,
 					types: ['restaurant'],
-					keyword: 'Pizza'
+					keyword: $("#radioForm input[name=Menu]:checked").val()	
 				};
 				var service = new google.maps.places.PlacesService(map);
 				service.nearbySearch(placesSearchOptions, function(results,status){
