@@ -12,6 +12,10 @@ main {
     width: 33%;
 }
 
+#what #radioForm {
+	margin-left: 50px;
+}
+
 #where {
     position: absolute;
     top: 0px;
