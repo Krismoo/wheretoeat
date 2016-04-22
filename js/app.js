@@ -36,9 +36,9 @@ function search(position) {
 	//find Places
 	var placesSearchOptions = {
 		location: here,
-		radius: 3000,
+		radius: 300,
 		types: ['restaurant'],
-		keyword: $("#radioForm input[name=Menu]:checked").val()	
+		keyword: $("#radioForm input[name=Menu]:checked").val()
 	};
 	var service = new google.maps.places.PlacesService(map);
 	service.nearbySearch(placesSearchOptions, function(results,status){

@@ -13,7 +13,11 @@ main {
 }
 
 #what #radioForm {
-	margin-left: 50px;
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
 }
 
 #where {

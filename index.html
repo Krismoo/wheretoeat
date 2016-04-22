@@ -20,30 +20,26 @@
 			<div class="tab-content">
 				<div role="tabpanel" class="tab-pane" id="where">Map</div>
 				<div role="tabpanel" class="tab-pane" id="who">
+                    <h3>Restaurants near me:</h3>
                     <table id="restaurantTable">
                     </table>
                 </div>
 				<div role="tabpanel" class="tab-pane active" id="what">
-
-          <!-- Options with Radiobuttons -->
-          <form action="" id="radioForm">
-            <h3>What do I want to eat?</h3>
-              <fieldset>
-                <input type="radio" id="pizza" name="Menu" value="Pizza"> <label for="pizza">Pizza</label><br>
-                <input type="radio" id="burger" name="Menu" value="Burger"> <label for="burger">Burger</label><br>
-                <input type="radio" id="kebab" name="Menu" value="Kebab"> <label for="kebab">Kebab</label><br>
-                <input type="radio" id="Sushi" name="Menu" value="Sushi"> <label for="sushi">Sushi</label><br>
-                <input type="radio" id="vegi" name="Menu" value="Vegi"> <label for="vegi">Vegi</label><br>
-                <input type="radio" id="gourmet" name="Menu" value="Gourmet"> <label for="gourmet">Gourmet</label><br>
-              </fieldset>
-			  <button type="sumbit" class="btn btn-primary" value="Search">Search</button>
-          </form>
-          
-         </div>
-
-
-
-
+                    <!-- Options with Radiobuttons -->
+                    <form action="" id="radioForm">
+                        <h3>What do I want to eat?</h3>
+                        <fieldset>
+                            <input type="radio" id="pizza" name="Menu" value="Pizza"> <label for="pizza">Pizza</label><br>
+                            <input type="radio" id="burger" name="Menu" value="Burger"> <label for="burger">Burger</label><br>
+                            <input type="radio" id="kebab" name="Menu" value="Kebab"> <label for="kebab">Kebab</label><br>
+                            <input type="radio" id="Sushi" name="Menu" value="Sushi"> <label for="sushi">Sushi</label><br>
+                            <input type="radio" id="vegi" name="Menu" value="Vegi"> <label for="vegi">Vegi</label><br>
+                            <input type="radio" id="gourmet" name="Menu" value="Gourmet"> <label for="gourmet">Gourmet</label><br>
+                        </fieldset>
+			            <button type="sumbit" class="btn btn-primary" value="Search">Search</button>
+                    </form>
+                </div>
+            </div>
 			<!-- Nav tabs -->
 			<ul class="nav nav-tabs" role="tablist">
 				<li role="presentation"><a href="#where" id="wheretabber" aria-controls="map" role="tab" data-toggle="tab">Where</a></li>
@@ -51,7 +47,6 @@
 				<li role="presentation" class="active"><a href="#what" id="whattabber" aria-controls="options" role="tab" data-toggle="tab">What</a></li>
 			</ul>
         </main>
-
 
 		<script type="text/javascript">
 			$('#myTabs a').click(function (e) {
